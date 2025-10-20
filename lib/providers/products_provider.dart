@@ -9,10 +9,23 @@ const List<Product> allProducts = [
     image: 'assets/products/iPhone15Pro-removebg-preview.png', // ← CORRIGÉ
   ),
   Product(
+    id: '5',
+    title: 'iPhone 13',
+    price: 599.0,
+    image: 'assets/products/iphone13-removebg-preview.png', // ← CORRIGÉ
+  ),
+  Product(
     id: '2',
     title: 'iPhone 15',
     price: 799.0,
     image: 'assets/products/iPhone15-removebg-preview.png', // ← CORRIGÉ
+  ),
+
+  Product(
+    id: '4',
+    title: 'iPhone SE',
+    price: 429.0,
+    image: 'assets/products/iphonese-removebg-preview.png', // ← CORRIGÉ
   ),
   Product(
     id: '3',
@@ -20,18 +33,9 @@ const List<Product> allProducts = [
     price: 699.0,
     image: 'assets/products/iphone14-removebg-preview.png', // ← CORRIGÉ
   ),
-  Product(
-    id: '4',
-    title: 'iPhone 13',
-    price: 599.0,
-    image: 'assets/products/iphone13-removebg-preview.png', // ← CORRIGÉ
-  ),
-  Product(
-    id: '5',
-    title: 'iPhone SE',
-    price: 429.0,
-    image: 'assets/products/iphonese-removebg-preview.png', // ← CORRIGÉ
-  ),
+
+
+
   Product(
     id: '6',
     title: 'AirPods Pro',
