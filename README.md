@@ -11,15 +11,7 @@ Une application e-commerce moderne développée avec Flutter et Riverpod, spéci
 
 🛍️ Catalogue produits - Affichage des produits Apple avec images transparentes
 
-#### 🛒 Gestion du Panier
-Ajout/Retrait instantané : Boutons dynamiques "Add to Cart" / "Remove"
-
-État persistant : Le panier conserve son contenu pendant la session
-
-Badge de compteur : Indicateur visuel du nombre d'articles dans l'icône panier
-
-Navigation fluide : Accès rapide au panier depuis toutes les pages
-
+🛒 Gestion du panier - Ajout/retrait de produits en temps réel
 
 💰 Calcul automatique - Total du panier mis à jour instantanément
 
