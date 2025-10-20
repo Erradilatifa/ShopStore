@@ -14,7 +14,7 @@ class HomeScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Garage Sale Products'),
+        title: const Text('ShopStore'),
         actions: const [CartIcon()],
       ),
       body: Padding(
@@ -25,7 +25,7 @@ class HomeScreen extends ConsumerWidget {
             crossAxisCount: 2,
             mainAxisSpacing: 20,
             crossAxisSpacing: 20,
-            childAspectRatio: 0.9,
+            childAspectRatio: 1.0, // ← Carrés parfaits
           ),
           itemBuilder: (context, index) {
             final product = allProducts[index];
@@ -38,10 +38,12 @@ class HomeScreen extends ConsumerWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+                    // IMAGE AVEC TAILLE ENCORE AUGMENTÉE
                     Image.asset(
                       product.image,
-                      width: 60,
-                      height: 60,
+                      width: 120, // ← TAILLE AUGMENTÉE (était 100)
+                      height: 120, // ← TAILLE AUGMENTÉE (était 100)
+                      fit: BoxFit.contain,
                     ),
                     Text(
                       product.title,

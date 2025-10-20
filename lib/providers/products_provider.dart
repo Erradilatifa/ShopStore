@@ -1,58 +1,48 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_files/models/product.dart';
 
-// NE METTEZ PAS ces lignes :
-// import 'package:riverpod_annotation/riverpod_annotation.dart';
-// part 'products_provider.g.dart';
-
 const List<Product> allProducts = [
   Product(
     id: '1',
-    title: 'Groovy Shorts',
-    price: 12.0,
-    image: 'assets/products/shorts.png',
+    title: 'iPhone 15 Pro',
+    price: 999.0,
+    image: 'assets/products/iPhone15Pro-removebg-preview.png', // ← CORRIGÉ
   ),
   Product(
     id: '2',
-    title: 'Karati Kit',
-    price: 34.0,
-    image: 'assets/products/Karati.png',
+    title: 'iPhone 15',
+    price: 799.0,
+    image: 'assets/products/iPhone15-removebg-preview.png', // ← CORRIGÉ
   ),
   Product(
     id: '3',
-    title: 'Denim Jeans',
-    price: 54.0,
-    image: 'assets/products/jeans.png',
+    title: 'iPhone 14',
+    price: 699.0,
+    image: 'assets/products/iphone14-removebg-preview.png', // ← CORRIGÉ
   ),
   Product(
     id: '4',
-    title: 'Red Backpack',
-    price: 14.0,
-    image: 'assets/products/backpack.png',
+    title: 'iPhone 13',
+    price: 599.0,
+    image: 'assets/products/iphone13-removebg-preview.png', // ← CORRIGÉ
   ),
   Product(
     id: '5',
-    title: 'Drum & Sticks',
-    price: 29.0,
-    image: 'assets/products/drum.png',
+    title: 'iPhone SE',
+    price: 429.0,
+    image: 'assets/products/iphonese-removebg-preview.png', // ← CORRIGÉ
   ),
   Product(
     id: '6',
-    title: 'Blue Suitcase',
-    price: 44.0,
-    image: 'assets/products/suitcase.png',
+    title: 'AirPods Pro',
+    price: 249.0,
+    image: 'assets/products/airpodspro-removebg-preview.png', // ← CORRIGÉ
   ),
   Product(
     id: '7',
-    title: 'Roller Skates',
-    price: 52.0,
-    image: 'assets/products/skates.png',
-  ),
-  Product(
-    id: '8',
-    title: 'Electric Guitar',
-    price: 79.0,
-    image: 'assets/products/guitar.png',
+    title: 'Apple Watch',
+    price: 399.0,
+    image: 'assets/products/applewatch-removebg-preview.png', // ← CORRIGÉ
   ),
 ];
 
@@ -62,9 +52,9 @@ final productsProvider = Provider<List<Product>>((ref) {
 });
 
 final reducedProductsProvider = Provider<List<Product>>((ref) {
-  return allProducts.where((p) => p.price < 50).toList();
+  return allProducts.where((p) => p.price < 500).toList();
 });
 
 final premiumProductsProvider = Provider<List<Product>>((ref) {
-  return allProducts.where((p) => p.price >= 50).toList();
+  return allProducts.where((p) => p.price >= 500).toList();
 });
