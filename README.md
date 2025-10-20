@@ -5,17 +5,22 @@ Une application e-commerce moderne développée avec Flutter et Riverpod, spéci
 
 ## 📱 Aperçu
 
-<div align="center"> <img src="screenshots/home.png" alt="Page d'accueil" width="200"/> <img src="screenshots/cart.png" alt="Panier" width="200"/> </div>
 
 
 ### ✨ Fonctionnalités
 
 🛍️ Catalogue produits - Affichage des produits Apple avec images transparentes
+
 🛒 Gestion du panier - Ajout/retrait de produits en temps réel
+
 💰 Calcul automatique - Total du panier mis à jour instantanément
+
 🎨 UI moderne - Design Material 3 avec cartes élégantes
+
 📱 Responsive - Adaptation parfaite sur mobile
+
 🔄 State Management - Gestion d'état robuste avec Riverpod
+
 🍎 Produits Apple - Sélection exclusive d'iPhone, AirPods et Apple Watch
 
 ## 🚀 Technologies Utilisées
